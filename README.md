@@ -1,4 +1,4 @@
-# IHLT_notebooks
+# Exercise 5:
 We can trick our MLP model into learning task-specific feature importance by having it behave like a simple linear classifier, which learns a single real number for every feature (every word in our case), where the higher this number, the more strongly associated the feature is with one of the classes, and the lower this number, the more strongly associated the feature is with the other of the classes. The classifier then simply sums the weights of the individual features (i.e. there is no non-linearity in the hidden layer).
 
 If this works, we should be able to sort the features (here: words) by this weight and get the "positive" words at one end, and "negative" words at the other end of this ordering.
